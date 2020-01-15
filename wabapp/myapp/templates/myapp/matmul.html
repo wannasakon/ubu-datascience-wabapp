@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Welcome to Matmul</h1>
+    <form action="" method="POST"></form>
+    <div>
+        <span>Matrix A:</span>
+        <textarea rows="6" cols="80" name="A">{{A}}</textarea>
+        <span>Matrix B:</span>
+        <textarea rows="6" cols="80" name="B">{{B}}</textarea>
+    </div>
+    <div style="text-align: center;">
+        <button type="submit">Multiply</button>
+    </div>
+    </form>
+    <div style="text-align: center;">
+        <textarea name="C" id="" cols="80" rows="6">{{C}}</textarea>
+
+    </div>
+    <div style="text-align: center;">
+        <table border="1">
+            {% for r in C %}
+            <tr>
+                {% for c in r %}
+                <td>{{c}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
